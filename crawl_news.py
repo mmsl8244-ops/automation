@@ -7,8 +7,8 @@ import os
 os.makedirs('docs', exist_ok=True)
 
 # 2. 크롤링 대상 URL
-#URL = "https://m.etnews.com/news/hot_content_list.html"
-URL = "https://www.etnews.com/"
+URL = "https://m.etnews.com/news/hot_content_list.html"
+#URL = "https://www.etnews.com/"
 res = requests.get(URL)
 soup = BeautifulSoup(res.text, 'html.parser')
 
